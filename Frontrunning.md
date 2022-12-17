@@ -17,8 +17,17 @@ Examples of displacement include:
 This attack is commonly performed by increasing the `gasPrice` higher than network average, often by a multiplier of 10 or more.
 
 ### Insertion
-### Suppression
 
+The adversary needs the original function call to execute after her transaction in order to successfully carry out this kind of attack.
+
+Mallory needs Alice's original function to execute on the modified state of the contract after she runs her function in an insertion attack.
+
+Mallory will insert two transactions: 
+
+1. buying the asset at the best offer price and 
+2. then selling it to Alice at her slightly higher purchase price, for instance. 
+
+if Alice places a purchase order on a blockchain asset at a price higher than the best offer. Mallory will profit from the price difference without having to hold the asset if Alice's transaction is then followed up on.
 
 
 
