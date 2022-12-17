@@ -22,3 +22,4 @@ When we run `DELEGATECALL` the `“num”` value is going to be stored in `stora
 
 
 
+![Screenshot (101)](https://user-images.githubusercontent.com/82324643/208251425-3010c0a1-c02d-4085-bfa9-4e972a0b6d57.png)
