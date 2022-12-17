@@ -28,9 +28,8 @@ This contract has two public functions. `donate()` and `withdraw()`. The donate(
 
 * using openzaplien Re-entracy guard
 
-![Screenshot (91)](https://user-images.githubusercontent.com/82324643/208233637-0f8d8a5d-36ad-4b22-8736-11536dee4cca.png)
 
+![Screenshot (92)](https://user-images.githubusercontent.com/82324643/208233925-7c11a295-1aba-4c42-bbee-c7d4ed408520.png)
 
-* using modifier
 
 
