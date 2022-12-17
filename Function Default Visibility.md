@@ -29,7 +29,10 @@ An internal function can be called by the main contract and any of its derived c
 
 A private function can only be called by the main contract in which it was specified. Private functions are used initially according to common practice, but if the scope is wider than this modifier type, any other plausible modifier should be used.
 
+#### Main contract
 ![Screenshot (86)](https://user-images.githubusercontent.com/82324643/208231320-c885491a-5dc9-401a-8841-b8a8425a1df4.png)
+
+#### Attacker contract
 ![Screenshot (87)](https://user-images.githubusercontent.com/82324643/208231325-0627e71f-e877-4a60-9c0c-a12ff8924a14.png)
 
 
