@@ -19,3 +19,21 @@ This attack is commonly performed by increasing the `gasPrice` higher than netwo
 ### Insertion
 ### Suppression
 
+
+
+
+## ERC20 API: An Attack Vector on the Approve/TransferFrom Methods
+
+
+    function approve(address _ spender, uint256 _ value) returns (bool success)
+
+#### Attack Scenario
+
+Here is a possible attack scenario:
+
+* Alice allows Bob to transfer N of Alice's tokens (N>0)  by calling the approve method on a Token smart contract, passing the Bob's address and N as the method arguments
+* After some time, Alice decides to change from N to M (M>0) the number of Alice's tokens Bob is allowed to transfer, so she calls the approve method again, this time passing the Bob's address and M as the method arguments
+* Bob notices the Alice's second transaction before it was mined and quickly sends another transaction that calls the transferFrom method to transfer N Alice's tokens somewhere
+* If the Bob's transaction will be executed before the Alice's transaction, then Bob will successfully transfer N Alice's tokens and will gain an ability to transfer another M tokens
+* Before Alice noticed that something went wrong, Bob calls the transferFrom method again, this time to transfer M Alice's tokens.
+So, an Alice's attempt to change the Bob's allowance from N to M (N>0 and M>0) made it possible for Bob to transfer N+M of Alice's tokens, while Alice never wanted to allow so many of her tokens to be transferred by Bob.
