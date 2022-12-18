@@ -47,7 +47,7 @@ transferProxy() (Proxy Transfer) is a newly proposed EIP where the users can pay
 
 There certainly are many possible ways to prevent such replay attacks, here are some of my ideas:
 
-
+* use timestamp 
 * Make nonce start at a higher count than 0
 * Add chainID, name of the public chain in smart contracts
 * Add address(this) in keccak256()
