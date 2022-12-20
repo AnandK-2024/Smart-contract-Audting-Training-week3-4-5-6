@@ -11,5 +11,10 @@ Lets assume we have an integer stored in `1 byte`. The greatest number we can st
 
 ### Underfow
 
+Underflow indicates that we have done a calculation that resulted in a number less than the least number we can represent.
+
+Let’s look at an example involving unsigned integers.
+
+Lets assume we have an integer stored in `1 byte`. The least number we can store in `one byte is 0`, so let’s take that. This is `00000000`. Now, suppose we substract 2 to it to get `00000010`. The result is in `negative number(-2)` but unsigned integer can't store negative number,after substraction found `11111110`. so result is `254` in decimal. So the final answer is `11111110` in `8 bits` this repersent underflow.
 
 
