@@ -1,3 +1,4 @@
+
 # Denial-of-Service
 
 
@@ -56,3 +57,4 @@ To prevent such DOS attack vectors, ensure a gas stipend is specified in an exte
 If you look up `0xfe` `opcodes` in the `yellow paper`, you won’t find them. This is why you see the `invalid opcode error`, because there’s no specification for how a client should handle them.
 
 `assert()` is just there to prevent anything really bad from happening, but it shouldn’t be possible for the condition to evaluate to false.
+
