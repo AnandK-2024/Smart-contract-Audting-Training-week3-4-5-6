@@ -18,3 +18,10 @@ Let’s look at an example involving unsigned integers.
 Lets assume we have an integer stored in `1 byte`. The least number we can store in `one byte is 0`, so let’s take that. This is `00000000`. Now, suppose we substract 2 to it to get `00000010`. The result is in `negative number(-2)` but unsigned integer can't store negative number,after substraction found `11111110`. so result is `254` in decimal. So the final answer is `11111110` in `8 bits` this repersent underflow.
 
 
+here is the function to get subsituation of unsigned integer in solidity:
+
+
+    function get(uint8 a, uint8 b) public pure returns(uint8 result){
+       unchecked { return a - b; }
+    }
+
